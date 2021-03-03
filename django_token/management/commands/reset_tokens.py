@@ -2,7 +2,7 @@ from __future__ import print_function
 
 from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand, CommandError
-from django.utils.six.moves import input
+from six.moves import input
 from django_token.models import Token
 
 
