@@ -37,6 +37,12 @@ from django_token.models import Token
 token = Token.objects.create(user=myuser)
 ```
 
+Or if you need to create token for some kind of web-service and you don't care about the user itself u can run this management command:
+
+```python
+python manage.py create_token_for_service your_service_name
+```
+
 If you REALLY want to reset all the tokens in your database, you can use the reset_tokens management command.
 
 ```
